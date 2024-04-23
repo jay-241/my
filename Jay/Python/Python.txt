@@ -1,0 +1,203 @@
+Python
+
+List in Python
+- A built in data type that stores set of values
+
+Program:
+marks = [94.5 , 68.7, 89]
+print(marks)
+print(type(marks))
+print(marks[0])
+print(len(marks))
+
+Output: 
+[94.5, 68.7, 89]
+<class 'list'>
+94.5
+3
+
+In python, we can add multiple type of data in single List.
+
+String are immutable in my Python and List are mutable in Python.
+
+List Slicing (Same rules as String Slicing)
+
+List Specific Methods:
+
+list = [2, 1, 3]
+list.append(4) -> [2, 1, 3, 4]
+list.sort -> [1, 2, 3]
+list.sort(reverse = True) -> [3, 2, 1]
+list.reverse() -> [3, 1, 2]
+list.insert(idx, ele)
+	Ex.list.insert(1, 5) -> [2, 5, 1, 3]
+
+list.remove(ele) #remove first occurance of element 
+	Ex. list = [2, 1, 3, 1]
+		list.remove(1) => [2, 3, 1]
+list.pop(idx)
+	Ex. list = [2, 1, 3, 1]
+		list.pop(2) => [2, 1, 1]
+
+In List if we write code like - print(list.sort)
+It prints "None" in terminal.	
+
+Tuples in Python
+A built-in data type that lets us create immutable sequence of values.
+
+tup = (2, 1, 3, 1)
+
+tup = (1) -> consider as a integer
+tup = (1,) ->For single value tuple.
+
+
+List is Palindrome or Not,
+list = [1,2,2,1]
+
+list1 = list.copy()
+
+list.reverse()
+
+if(list1 == list):
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+
+Dictionary in Python
+Dictionaries are used to store data values in key:values pairs
+
+They are unordered. mutable(changable) & don't allow duplicate keys 
+
+info = {
+    "name" : "jay",
+    "age"  : 5
+
+}
+info ["cgpa"] = 80
+print(info)
+
+Nesting is also available in dictonary
+
+students = {
+    "name" : "Jay",
+    "subjects": {
+        "Web" : 90,
+        "TI" : 90
+    }
+}
+
+print(students["subjects"])
+
+
+Dictonary Methods:
+my.Dict.keys()	#returns all keys
+myDict.values() #returns all values
+myDict.items() #return all (key,value) pairs as tuples
+myDict.get("key") #return the key according to value
+myDict.update(newDict) #insert specified items to the dictonary
+
+students = {
+    "name" : "Jay",
+    "subjects": {
+        "Web" : 90,
+        "TI" : 90
+    }
+}
+
+print(students.keys())
+
+Output - dict_keys(['name', 'subjects'])
+
+students = {
+    "name" : "Jay",
+    "subjects": {
+        "Web" : 90,
+        "TI" : 90
+    }
+}
+
+print(students["name"])
+print(students.get("name"))
+
+#print(students["name2"]) #error
+print(students.get("name2")) #none
+
+
+
+Set in Python
+
+Set is collection of unordered items.
+Each element in set must be unique & immutable.
+
+nums = {1, 2, 3, 4}
+set2 = {1, 2, 2, 2}  => Store set2 = {1, 2}. 
+
+null_set = set()
+
+We can't store list and dictonary in Set.
+
+
+Set methods
+
+Set is mutable (We can change it)
+Set's value (elements) are immutable(means unique)
+
+set.add(el) #adds an element
+set.remove(el) #removes the element 
+
+set.clear() #empties the set
+set.pop() #removes a random value
+
+set.union(set2) #combine both set values & returns new
+set.intersection(set2) #combines common values & returns new
+
+
+Loops in Python
+
+Loops are used to repeat instructions
+Two types in Python
+1. For
+2. While
+
+while Loops
+
+while condition:
+	#some work
+
+break
+continue
+
+For Loop
+1. for Loops
+for el in list:
+	#some work
+
+2. for Loop with else
+for el in list:
+	#some work
+else
+	#work when loop ends
+
+### 
+range()
+Range functions returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
+
+range(start?, stop, step?)
+
+
+
+for i in range(100, 0, -1):
+    print(i)
+
+
+###
+pass statement
+pass is null statement that does nothing . It is used as a placeholder for future code. 
+
+
+### 
+Functions in Python
+Block of statements that perform a specific task.
+
+def
